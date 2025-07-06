@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the width of page based on device for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small tour! </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="start-screen">
+            <h1>Welcome, Kartikaya!</h1>
+            <p>Are you ready for a mini-tour? 🌍</p>
+            <button id="start-button">Start Your Journey!</button>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <h2 id="current-location-name"></h2> <img id="location-image" src="" alt="Famous Landmark">
+            <p id="hint-text"></p>
+
+            <div class="input-section">
+                <input type="text" id="user-guess" placeholder="What place am I?">
+                <button id="submit-guess">Submit Guess</button>
+            </div>
+            <!-- Updated by JS for correct or incorrect -->
+            <p id="feedback-message"></p>
+        </div>
+
+        <div id="birthday-screen" class="hidden">
+            <img id="birthday-image" src="" alt="Happy Birthday!">
+            <h2 id="birthday-heading">You've reached your final destination!</h2>
+            <p id="birthday-message"></p>
+            <!-- <div id="wish-test" class="hidden">
+                <p>To unlock your special wish, fill in the blank:</p>
+                <p>May your year be filled with **______**, joy, and adventure!</p>
+                <input type="text" id="wish-input" placeholder="Your wish word">
+                <button id="reveal-wish-button">Reveal My Wish!</button>
+                <p id="final-wish-message" class="hidden"></p>
+            </div> -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <!-- Linking at end to ensure all elements are loaded first -->
+    <script src="script.js"></script>
+</body>
+</html>
